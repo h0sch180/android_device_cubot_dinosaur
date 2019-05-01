@@ -18,15 +18,16 @@ Camera  | Front: 5.0MPx, Back 13MPx, LED Flash
 
 # Instructions
 ```
-repo init -u git://github.com/LineageOS/android.git -b cm-14.1
-repo sync
-git https://github.com/h0sch180/android_device_cubot_dinosaur.git -b cm-14.1 device/CUBOT/DINOSAUR
+repo init -u https://github.com/ViperOS-Extended/manifest -b nougat
+repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
+git clone https://github.com/h0sch180/android_device_cubot_dinosaur.git -b viperos device/CUBOT/DINOSAUR
 ./device/CUBOT/DINOSAUR/patches_mtk/apply-patches.sh
 . build/envsetup.sh
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
 ./prebuilts/sdk/tools/jack-admin kill-server
 ./prebuilts/sdk/tools/jack-admin start-server
-brunch DINOSAUR
+lunch viper_DINOSAUR-userdebug
+mka poison
 ```
 
 # Acknowledgements
