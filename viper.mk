@@ -25,7 +25,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/CUBOT/DINOSAUR/lineage_DINOSAUR.mk)
+$(call inherit-product, device/CUBOT/DINOSAUR/viper_DINOSAUR.mk)
 
 # Inherit device configuration
 #$(call inherit-product, $(LOCAL_PATH)/device_DINOSAUR.mk)
@@ -34,7 +34,7 @@ $(call inherit-product, device/CUBOT/DINOSAUR/lineage_DINOSAUR.mk)
 # Device branding
 PRODUCT_RELEASE_NAME := DINOSAUR
 PRODUCT_DEVICE := DINOSAUR
-PRODUCT_NAME := lineage_DINOSAUR
+PRODUCT_NAME := viper_DINOSAUR
 PRODUCT_BRAND := CUBOT
 PRODUCT_MANUFACTURER := CUBOT
 PRODUCT_MODEL := CUBOT DINOSAUR
