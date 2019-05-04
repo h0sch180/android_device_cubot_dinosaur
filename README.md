@@ -1,4 +1,4 @@
-# LineageOS 14.1 device tree for CUBOT DINOSAUR 
+# Viper OS Extended device tree for CUBOT DINOSAUR 
 
 CUBOT DINOSAUR
 ==============
@@ -10,7 +10,7 @@ GPU     | Mali-T720
 Memory  | 3GB RAM
 Shipped Android Version | 6.0
 Storage | 16GB
-Battery | 4100 mAh
+Battery | 4150 mAh
 Display | 5.5" 720 x 1280 px
 Camera  | Front: 5.0MPx, Back 13MPx, LED Flash
 
