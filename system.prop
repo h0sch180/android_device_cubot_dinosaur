@@ -9,7 +9,7 @@ service.wcn.coredump.mode=2
 ro.mediatek.chip_ver=S01
 ro.mediatek.platform=MT6735
 ro.mediatek.version.sdk=4
-ro.mediatek.version.release=alps-mp-m0.mp1-V2.39.1_wtk6753.65u.m0
+ro.mediatek.version.release=alps-mp-m0.mp1-V2.39.1_wtk6735.65u.m0
 
 # Telephony
 rild.libpath=/system/lib64/mtk-ril.so
