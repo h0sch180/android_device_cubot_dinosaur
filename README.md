@@ -5,7 +5,7 @@ CUBOT DINOSAUR
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | 1.3GHz Quad-Core MT6753A
+CPU     | 1.3GHz Quad-Core MT6735A
 GPU     | Mali-T720
 Memory  | 3GB RAM
 Shipped Android Version | 6.0
