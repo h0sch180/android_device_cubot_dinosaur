@@ -181,9 +181,11 @@
          ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
     <integer name="config_screenBrightnessDoze">3</integer>
+
     <!-- If true, the doze component is not started until after the screen has been turned off
          and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOff">true</bool>
+
     <!-- Specifies whether to decouple the interactive state of the device from the display on/off state. -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
@@ -201,8 +203,13 @@
     <bool name="config_intrusiveNotificationLed">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool> 
+    <bool name="config_intrusiveBatteryLed">true</bool>
 
     <!-- Default color for notification LED is green. -->
     <color name="config_defaultNotificationColor">#ff0000ff</color>
+
+		<!-- enable WifiDisplay / Miracast -->
+  	<bool name="config_enableWifiDisplay">true</bool>
+	  <bool name="config_wifiDisplaySupportsProtectedBuffers">false</bool>
+
 </resources>
