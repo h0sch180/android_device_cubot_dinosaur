@@ -1,4 +1,4 @@
-# LineageOS 14.1 device tree for CUBOT DINOSAUR 
+# AOSPExtended Nougat device tree for CUBOT DINOSAUR 
 
 CUBOT DINOSAUR
 ==============
@@ -14,19 +14,20 @@ Battery | 4150 mAh
 Display | 5.5" 720 x 1280 px
 Camera  | Front: 5.0MPx, Back 13MPx, LED Flash
 
-![DEXP](https://github.com/h0sch180/android_device_cubot_dinosaur/blob/cm-14.1/cubot_dinosaur.jpg "Cubot Dinosaur")
+![DEXP](https://github.com/h0sch180/android_device_cubot_dinosaur/blob/aospx/cubot_dinosaur.jpg "Cubot Dinosaur")
 
 # Instructions
 ```
-repo init -u git://github.com/LineageOS/android.git -b cm-14.1
-repo sync
-git https://github.com/h0sch180/android_device_cubot_dinosaur.git -b cm-14.1 device/CUBOT/DINOSAUR
+repo init -u git://github.com/AospExtended/manifest.git -b 7.x
+repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+git https://github.com/h0sch180/android_device_cubot_dinosaur.git -b aospx device/CUBOT/DINOSAUR
 ./device/CUBOT/DINOSAUR/patches_mtk/apply-patches.sh
 . build/envsetup.sh
 export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx8g"
 ./prebuilts/sdk/tools/jack-admin kill-server
 ./prebuilts/sdk/tools/jack-admin start-server
-brunch DINOSAUR
+lunch aosp_DINOSAUR-userdebug
+mka aex -jx
 ```
 
 # Acknowledgements
