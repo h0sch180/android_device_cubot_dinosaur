@@ -20,7 +20,30 @@
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/CUBOT/DINOSAUR/device_DINOSAUR.mk)
 $(call inherit-product-if-exists, vendor/CUBOT/DINOSAUR/DINOSAUR-vendor.mk)
+
+LOCAL_PATH := device/CUBOT/DINOSAUR
+
+# Inherit some common Lineage OS stuff.
+$(call inherit-product, vendor/aosp/common.mk)
+
+# Device branding
+PRODUCT_RELEASE_NAME := DINOSAUR
+PRODUCT_DEVICE := DINOSAUR
+PRODUCT_NAME := aosp_DINOSAUR
+PRODUCT_BRAND := CUBOT
+PRODUCT_MANUFACTURER := CUBOT
+PRODUCT_MODEL := CUBOT DINOSAUR
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=CUBOT/x5623_h6013_cubot/x5623_h6013_cubot:6.0/MRA58K/1467902799:user/release-keys \
+PRIVATE_BUILD_DESC="x5623_h6013_cubot-user 6.0 MRA58K 1502939649 release-keys"
+
+# SuperUser
+WITH_SU := false
+WITH_ROOT := false
+
+PRODUCT_GMS_CLIENTID_BASE := android-google
